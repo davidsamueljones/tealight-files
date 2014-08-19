@@ -9,14 +9,11 @@ def DrawSquare(size):
     move(1)
     
 def BlackenSquare(size):
-  for i in range(0,4):
-    move(size)
-    turn(90)
-    move(1)
-
-size = 50
-for i in range(0,50):
+  size = 50
+  for i in range(0,50):
   size = size - 1
   DrawSquare(size)
+
+
   
-DrawWhiteSquare(size)
+DrawSquare(size)
