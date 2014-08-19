@@ -15,3 +15,5 @@ def DrawBlackSquare(size):
     DrawSquare(size)
 
 DrawBlackSquare(50)
+move(50)
+DrawWhiteSquare(50)
