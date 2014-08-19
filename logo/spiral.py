@@ -9,4 +9,4 @@ def spiral(size):
   turn(90)
   spiral(size + 2)
   
-spiral(0)
+spiral(1)
