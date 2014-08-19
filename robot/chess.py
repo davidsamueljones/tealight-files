@@ -25,4 +25,5 @@ def MoveThroughFruit():
       move()
     
     
-MoveThroughFruit()
+if touch() == 'fruit':
+  MoveThroughFruit()
