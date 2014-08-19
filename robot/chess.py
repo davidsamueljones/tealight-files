@@ -10,3 +10,5 @@ from tealight.robot import (move,
 def Move(distance):
   for i in range(0,distance):
     move()
+    
+Move(10)
