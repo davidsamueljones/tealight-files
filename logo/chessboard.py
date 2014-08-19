@@ -4,7 +4,6 @@ from tealight.logo import (move,
 
 def DrawBlackSquare(edges,size):
   for i in range(0,50):
-    size = size + i
     move(size)
     turn(90)
     move(1)
