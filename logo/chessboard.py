@@ -2,6 +2,7 @@ from tealight.logo import (move,
                            turn, 
                            color)
 size = 50
+color = "red"
 
 def DrawSquare(size):
   for i in range(0,4):
