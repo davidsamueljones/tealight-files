@@ -14,7 +14,11 @@ def DrawBlackSquare(size):
     DrawSquare(size)
     size = size - 1
 
-DrawSquare(size)
-move(size)
-DrawBlackSquare(size)
-move(-1)
+for x in range(0,4):
+  turn(90)
+  move(size)
+  turn(-90)
+  for y in range(0,4):
+    DrawSquare(size)
+    move(size)
+    DrawBlackSquare(size)
