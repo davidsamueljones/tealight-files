@@ -24,6 +24,5 @@ def MoveThroughFruit():
     if i < distance:
       move()
     
-    
 if touch() == 'fruit':
   MoveThroughFruit()
