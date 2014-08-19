@@ -11,5 +11,6 @@ def Move(distance):
   i = 0
   while i <= distance:
     move()
-    i + 1
+    i += 1
+    
 Move(10)
