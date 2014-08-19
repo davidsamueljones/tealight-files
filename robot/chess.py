@@ -13,5 +13,6 @@ def Move(distance):
   while i < distance and empty == False:
     move()
     i += 1
-    
+  if touch() == "fruit":
+    distance += 1
 Move(10)
