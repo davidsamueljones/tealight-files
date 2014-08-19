@@ -16,4 +16,4 @@ def Move(distance):
   if touch() == 'fruit':
     distance += 1
     
-Move(10)
+Move(0)
