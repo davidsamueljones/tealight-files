@@ -6,12 +6,19 @@ def square(side):
     move(side)
     turn(90)
 
+def triangle(side):
+    move(side)
+    turn(60)
+    move(side)
+    turn(120)
+    move(side)
+    
 def waterwheel(edges, size):
   angle = 360 / edges
   decoration = size / 2
   for i in range(0, edges):
     move(size)
-    square(decoration)
+    triangle(decoration)
     turn(angle)
 
 turn(-90)
