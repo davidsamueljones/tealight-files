@@ -3,7 +3,7 @@ from tealight.logo import (move,
                            color)
 
 def DrawBlackSquare(edges,size):
-  for size < 50
+  for size < 50:
     move(size)
     turn(90)
   
