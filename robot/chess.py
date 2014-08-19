@@ -15,13 +15,14 @@ def MoveDefinedDistance(distance):
     
 def MoveThroughFruit():
   if touch() == 'fruit':
-      distance = 0
-  i = -1  
+      distance = 1
+  i = 0
   while i < distance:
     if touch() == 'fruit':
       distance += 1
-    move()
     i += 1
+    if i < distance:
+      move()
     
     
 MoveThroughFruit()
