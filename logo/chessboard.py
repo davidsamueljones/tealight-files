@@ -10,6 +10,6 @@ def DrawBlackSquare(size):
     size - 5
  
 size = 50
-for i in range(0,4):
+for i in range(0,50):
   size = size - 1
   DrawBlackSquare(size)
