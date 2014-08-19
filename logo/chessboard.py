@@ -6,7 +6,7 @@ def DrawBlackSquare(size):
   for i in range(0,4):
     move(size)
     turn(90)
-    move(10)
+    move(1)
     size - 5
  
 size = 50
