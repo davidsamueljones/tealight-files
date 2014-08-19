@@ -8,4 +8,4 @@ def DrawSquare(edges,size):
     turn(90)
   
 turn(-90)
-DrawSquare(12,150)
+DrawSquare(12,20)
