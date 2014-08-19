@@ -28,5 +28,5 @@ while z < 512:
     turn(1)
   elif look() == 'wall':
     turn(1)
-  elif look() == 'fruit'
+  elif look() == 'fruit':
     MoveSearch(None)
