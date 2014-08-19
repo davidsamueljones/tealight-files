@@ -8,7 +8,7 @@ def DrawBlackSquare(size):
     turn(90)
     move(1)
     
-def DrawWhiteSquare(size)
+def DrawWhiteSquare(size):
   for i in range(0,4):
   move(size)
   turn(90)
