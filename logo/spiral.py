@@ -1,6 +1,6 @@
 from tealight.logo import move, turn
 
-def spiral(50):
+def spiral(size + 2):
   
   if size > 300:
     return
