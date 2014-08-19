@@ -14,6 +14,8 @@ def MoveDefinedDistance(distance):
     i += 1
     
 def MoveThroughFruit():
+  global collectedfruit
+  
   distance = 1
   i = 0
   while i < distance:
