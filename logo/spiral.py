@@ -7,6 +7,6 @@ def spiral(size):
   
   move(size)
   turn(90)
-  spiral(size)
+  spiral(size + 0)
   
 spiral(0)
