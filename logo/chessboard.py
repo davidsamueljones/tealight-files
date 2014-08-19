@@ -8,12 +8,10 @@ def DrawSquare(size):
     turn(90)
     move(1)
     
-def BlackenSquare(size):
+def DrawBlackSquare(size):
   size = 50
   for i in range(0,50):
     size = size - 1
     DrawSquare(size)
 
-
-  
-DrawSquare(size)
+DrawBlackSquare(50)
