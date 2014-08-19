@@ -6,6 +6,7 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-# Add your code here
-for i in range(0,10):
-  move()
+# Move set amount
+def Move(distance):
+  for i in range(0,distance):
+    move()
