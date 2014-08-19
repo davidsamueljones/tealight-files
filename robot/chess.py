@@ -24,7 +24,7 @@ def MoveThroughFruit(collectedfruit):
       move()
       collectedfruit += 1
    
-while collectedfruit < 2500:
+while collectedfruit < 10:
   if touch() == 'fruit':
     MoveThroughFruit(collectedfruit)
   elif left_side() == 'fruit':
