@@ -14,7 +14,7 @@ def DrawBlackSquare(size):
     size = size - 1
     DrawSquare(size)
 
-for i in range(0,4):
+'for i in range(0,4):
   move(size)
   DrawSquare(size)
   DrawBlackSquare(size)
