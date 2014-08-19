@@ -8,7 +8,8 @@ from tealight.robot import (move,
 
 # Move set amount
 def Move(distance):
+  i = 0
   while i <= distance:
     move()
-    
+    i + 1
 Move(10)
