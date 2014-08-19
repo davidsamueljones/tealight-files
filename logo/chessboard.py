@@ -10,9 +10,9 @@ def DrawSquare(size):
     move(1)
     
 def DrawBlackSquare(size):
-  for i in range(0,size):
-    size = size - 1
+  for i in range(0,size):  
     DrawSquare(size)
+    size = size - 1
 
 DrawSquare(size)
 move(size)
