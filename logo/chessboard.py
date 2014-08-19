@@ -1,7 +1,7 @@
 from tealight.logo import (move, 
                            turn, 
                            color)
-size = 100
+size = 50
 
 def DrawSquare(size):
   for i in range(0,4):
