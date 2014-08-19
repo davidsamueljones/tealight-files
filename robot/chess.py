@@ -13,7 +13,7 @@ def MoveDefinedDistance(distance):
     move()
     i += 1
     
-def MoveThroughFruit():
+def MoveThroughFruit(collectedfruit):
   if touch() == 'fruit':
       distance = 1
   i = 0
@@ -27,7 +27,7 @@ def MoveThroughFruit():
    
 while collectedfruit < 512:
   if touch() == 'fruit':
-    MoveThroughFruit()
+    MoveThroughFruit(collectedfruit)
   elif left_side() == 'fruit':
     turn(-1)
   elif right_side() == 'fruit':
