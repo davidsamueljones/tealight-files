@@ -11,8 +11,8 @@ def DrawSquare(size):
 def BlackenSquare(size):
   size = 50
   for i in range(0,50):
-  size = size - 1
-  DrawSquare(size)
+    size = size - 1
+    DrawSquare(size)
 
 
   
