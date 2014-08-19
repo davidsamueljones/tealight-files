@@ -23,5 +23,5 @@ for y in range(0,4):
    DrawBlackSquare(size)
    move(50)
   turn(180)
-  move(size * 8)
+  move(size)
   turn(-90)
