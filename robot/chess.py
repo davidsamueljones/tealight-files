@@ -17,7 +17,7 @@ def MoveThroughFruit():
   if touch() == 'fruit':
       distance = 1
   i = 0  
-  while i < distance:
+  while i < distance - 1:
     if touch() == 'fruit':
       distance += 1
     move()
