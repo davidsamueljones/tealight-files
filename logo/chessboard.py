@@ -17,7 +17,6 @@ def DrawWhiteSquare(size):
 
 size = 50
 for i in range(0,50):
-  size = size - 1
   DrawBlackSquare(size)
   
 DrawWhiteSquare(size)
