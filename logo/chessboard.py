@@ -19,5 +19,5 @@ def DrawBlackSquare(size):
 for y in range(0,4):
  size = 50
  DrawSquare(size)
- move(size)
+ move(100)
  DrawBlackSquare(size)
