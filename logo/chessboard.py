@@ -1,6 +1,7 @@
 from tealight.logo import (move, 
                            turn, 
                            color)
+size = 50
 
 def DrawSquare(size):
   for i in range(0,4):
@@ -15,12 +16,12 @@ def DrawBlackSquare(size):
 
 turn(0)
 for y in range(0,4):
-  turn(180)
-  move(size * 8)
-  turn(-90)
   for y in range(0,4):
    size = 50
    DrawSquare(size)
    move(50)
    DrawBlackSquare(size)
    move(50)
+  turn(180)
+  move(size * 8)
+  turn(-90)
