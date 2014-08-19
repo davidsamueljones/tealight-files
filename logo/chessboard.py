@@ -19,6 +19,7 @@ for x in range(0,4):
   move(size)
   turn(-90)
   for y in range(0,4):
+    size = 50
     DrawSquare(size)
     move(size)
     DrawBlackSquare(size)
