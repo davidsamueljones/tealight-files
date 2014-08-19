@@ -6,8 +6,11 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
+wallcount = 0
 
 def MoveSearch(thing):
+  global wallcount
+  wallcount = 0
   distance = 1
   i = 0
   while i < distance:
@@ -26,7 +29,8 @@ while z < 512:
     turn(-1)
   elif right_side() == 'fruit':
     turn(1)
-  elif look() == 'wall':
+  elif look() == 'wall' and wallcount < 4:
     turn(1)
+    wallcount += 1
   elif look() == 'fruit':
     MoveSearch(None)
