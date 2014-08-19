@@ -7,13 +7,20 @@ from tealight.robot import (move,
                             right_side)
 
 # Move set amount
-def Move(distance):
+def MoveDefinedDistance(distance):
   i = 0
-  empty = False
+  while i < distance:
+    move()
+    i += 1
+    
+def MoveThroughFruit:
+  distance = 0
+  empty == False
+  if touch() == 'fruit':
+    distance += 1
   while i < distance and empty == False:
     move()
     i += 1
-  if touch() == 'fruit':
-    distance += 1
     
-Move(0)
+    
+MoveThroughFruit()
