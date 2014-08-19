@@ -15,7 +15,7 @@ def DrawBlackSquare(size):
     size = size - 1
 
 
-for y in range(0,8):
+for y in range(0,2):
  size = 50
  DrawSquare(size)
  turn(90)
