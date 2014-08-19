@@ -7,6 +7,6 @@ def DrawBlackSquare(size):
     move(size)
     turn(90)
     move(10)
-    turn(90)
+    turn(-90)
   
 DrawBlackSquare(50)
