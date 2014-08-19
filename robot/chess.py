@@ -5,6 +5,7 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
+collectedfruit = 0
 
 def MoveDefinedDistance(distance):
   i = 0
@@ -22,8 +23,7 @@ def MoveThroughFruit():
     i += 1
     if i < distance:
       move()
-  
-  
+   
 while collectedfruit < 512:
   if touch() == 'fruit':
     MoveThroughFruit()
