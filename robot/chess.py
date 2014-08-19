@@ -24,10 +24,10 @@ def MoveThroughFruit():
       move()
   
   
-  
-if touch() == 'fruit':
-  MoveThroughFruit()
-elif left_side() == 'fruit':
-  turn(-1)
-elif right_side() == 'fruit':
-  turn(1)
+while collectedfruit < 512:
+  if touch() == 'fruit':
+    MoveThroughFruit()
+  elif left_side() == 'fruit':
+    turn(-1)
+  elif right_side() == 'fruit':
+    turn(1)
