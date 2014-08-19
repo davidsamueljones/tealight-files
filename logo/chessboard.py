@@ -7,7 +7,7 @@ def DrawBlackSquare(edges,size):
     move(size)
     turn(90)
     stop = false
-  if size = 50:
+  if size == 50:
     stop = true
   
 turn(-90)
