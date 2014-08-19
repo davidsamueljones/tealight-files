@@ -23,6 +23,7 @@ def MoveThroughFruit():
     i += 1
     if i < distance:
       move()
+      collectedfruit += 1
    
 while collectedfruit < 512:
   if touch() == 'fruit':
