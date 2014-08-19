@@ -27,7 +27,7 @@ def MoveThroughFruit():
   
 if touch() == 'fruit':
   MoveThroughFruit()
-elif left_side() = 'fruit'
+elif left_side() == 'fruit':
   turn(-1)
-elif right_side() = 'fruit'
+elif right_side() == 'fruit'
   turn(1)
