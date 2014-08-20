@@ -37,12 +37,12 @@ def handle_frame():
   if x < 1 or x > 898:
     vx = -vx
     vx = vx * 0.9
-  elif y < 1 or y == 1024:
+  elif y < 1 or y < 1024:
     vy = -vy
     vy = vy * 0.9
   elif y > 1025:
-    x = 100
-    y = 100
+    ay = 0
+    vy = 0
     
   color("white")
   
