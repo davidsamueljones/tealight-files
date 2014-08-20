@@ -34,6 +34,16 @@ def handle_keyup(key):
 def handle_frame():
   global x,y,vx,vy,ax,ay
   
+    if x < 1 or x > 898:
+    vx = -vx
+    vx = vx * 0.9
+  elif y < 1 or y > 1024:
+    vy = -vy
+    vy = vy * 0.9
+  elif y > 1025:
+    x = 100
+    y = 100
+    
   color("white")
   
   spot(x,y,8)
@@ -47,15 +57,6 @@ def handle_frame():
   
   spot(x,y,8)
   
-  if x < 1 or x > 898:
-    vx = -vx
-    vx = vx * 0.9
-  elif y < 1 or y > 1024:
-    vy = -vy
-    vy = vy * 0.9
-  elif y > 1025:
-    x = 100
-    y = 100
   
   
   
