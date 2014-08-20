@@ -1,13 +1,13 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 
-x = 600
+x = 1000
 y = 400
 vx = 0
 vy = 0
 ax = 0
 ay = 0
 
-power = 2
+power = 0.3
 
 def handle_keydown(key):
   global ax, ay
@@ -41,10 +41,11 @@ def handle_frame():
   
   x = x + vx
   y = y + vy
-  y += 2
   
   color("blue")
   
   spot(x,y,8)
+  
+  
   
   
