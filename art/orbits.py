@@ -51,7 +51,7 @@ def handle_frame():
     vx = -vx
     vy = -vy
   elif y < 0 or y > 1012:
-    vx = -vx
+    vx = vx
     vy = -vy
   
   
