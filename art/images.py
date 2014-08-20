@@ -13,4 +13,5 @@ for i in range(0,width):
       y = y + 20
     else:
       image(x + j * 30, y + i * 30, "misc/Clover.png")
+      y + 20
      
