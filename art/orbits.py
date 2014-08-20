@@ -47,9 +47,9 @@ def handle_frame():
   
   spot(x,y,8)
   
-  if x < 0 or x > 898:
+  if x < 1 or x > 898:
     vx = -vx
-  elif y < 0 or y > 1012:
+  elif y < 1 or y > 1012:
     vy = -vy
   
   
