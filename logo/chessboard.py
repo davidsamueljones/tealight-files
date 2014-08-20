@@ -16,11 +16,11 @@ def DrawBlackSquare(size):
 
 turn(0)
 for y in range(0,8):
+  turn(180)
+  move(size * 8)
   for y in range(0,4):
    size = 50
    DrawSquare(size)
    move(50)
    DrawBlackSquare(size)
    move(50)
-  turn(180)
-  move(size * 8)
