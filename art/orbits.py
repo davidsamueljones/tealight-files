@@ -43,6 +43,7 @@ def handle_frame():
     if y > 1050:
       ay = 0
       vy = 0
+      y = 1024
     
   color("white")
   
