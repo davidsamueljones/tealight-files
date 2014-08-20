@@ -1,6 +1,6 @@
-Matrix = [[0 for x in xrange(10)] for x in range(10)] 
-Matrix[0][0] = 1
-Matrix[4][0] = 5
+from random import random, randint
 
-print Matrix[0][0] # prints 1
-print Matrix[4][0] # prints 5
+BombArray = [[0 for x in range(10)] for x in range(10)] 
+Matrix[0][0] = 1
+
+print Matrix[0][0]
