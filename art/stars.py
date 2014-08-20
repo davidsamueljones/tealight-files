@@ -6,7 +6,7 @@ def star(x, y, c, size, spines):
   
   color(c)
   
-  angle = 90
+  angle = 45
   
   for i in range(0, spines):
     x0 = x + (size * cos(angle))
