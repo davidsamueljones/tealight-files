@@ -34,7 +34,7 @@ def handle_keyup(key):
 def handle_frame():
   global x,y,vx,vy,ax,ay
   
-    if x < 1 or x > 898:
+  if x < 1 or x > 898:
     vx = -vx
     vx = vx * 0.9
   elif y < 1 or y > 1024:
