@@ -22,6 +22,6 @@ for y in range(0,8):
    move(50)
    DrawBlackSquare(size)
    move(50)
-  turn(180)
+  #turn(180)
   move(size * 8)
   move(10)
