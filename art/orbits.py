@@ -47,8 +47,8 @@ def handle_frame():
   spot(x,y,8)
   
   if x < 0 or x > 898 or y < 0 or y > 1012:
-    x = 0
-    y = 0
+    x = 200
+    y = 200
   
   
   
