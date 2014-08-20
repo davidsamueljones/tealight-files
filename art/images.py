@@ -8,7 +8,7 @@ height = 8
 
 for i in range(0,width):
   for j in range(0,height):
-    if i = j :
+    if i == j :
       image(x + j * 30, y + i * 30, "misc/YellowFlower.png")
     else:
       image(x + j * 30, y + i * 30, "misc/Clover.png")
