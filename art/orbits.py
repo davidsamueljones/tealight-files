@@ -1,4 +1,5 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
+from math import sin, cos, pi
 
 x = 400
 y = 600
@@ -47,8 +48,9 @@ def handle_frame():
   spot(x,y,8)
   
   if x < 0 or x > 898 or y < 0 or y > 1012:
-    x = 200
-    y = 200
+    temp = ax
+    ax = ay
+    ay = temp
   
   
   
