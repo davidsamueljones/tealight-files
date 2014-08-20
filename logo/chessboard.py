@@ -26,3 +26,4 @@ for y in range(0,8):
   move(size)
   turn(90)
   move(size*8)
+  move(100)
