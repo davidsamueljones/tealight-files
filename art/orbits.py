@@ -1,6 +1,6 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 
-x = 890
+x = 898
 y = 1012
 vx = 0
 vy = 0
