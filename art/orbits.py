@@ -53,8 +53,8 @@ def handle_frame():
     vy = -vy
     vy = vy * 0.9
   elif y > 1025:
-    x = 0
-    y = 0
+    x = 100
+    y = 100
   
   
   
