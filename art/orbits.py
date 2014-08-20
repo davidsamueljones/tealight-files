@@ -40,9 +40,9 @@ def handle_frame():
   elif y < 1 or y > 1024:
     vy = -vy
     vy = vy * 0.9
-  elif y > 1025:
-    ay = 0
-    vy = 0
+    if y > 1025:
+      ay = 0
+      vy = 0
     
   color("white")
   
