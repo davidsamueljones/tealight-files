@@ -49,7 +49,7 @@ def handle_frame():
   
   if x < 1 or x > 898:
     vx = -vx
-  elif y < 1 or y > 1012:
+  elif y < 1 or y > 1024:
     vy = -vy
     vy = vy * 0.9
   
