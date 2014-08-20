@@ -40,7 +40,7 @@ def handle_frame():
   elif y < 1 or y > 1024:
     vy = -vy
     vy = vy * 0.9
-    if y > 1100:
+    if y > 1050:
       ay = 0
       vy = 0
     
