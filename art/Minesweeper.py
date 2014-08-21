@@ -23,6 +23,10 @@ def PlaceBombs(NumberOfBombs):
     if BombArray[x][y] == 0:
       BombArray[x][y] = -1
       BombsPlaced += 1
+  for x in range(0,HLimit):
+    for y in range(0,WLimit):
+      if BombArray[x][y] > -1:
+        BombCheck(x,y)
   
 def DrawGrid():
   global OffsetX, OffsetY
@@ -65,7 +69,23 @@ def DrawNumber(x,y,NumberOfMines):
   y += 0.25
   text(StartingX + SquareSize * x,StartingY + SquareSize * y, NumberOfMines)
   
+
+def BombCheck(x,y):
+  global BombArray
+  BombCount = 0
+  
+  for (i,j) in [(x-1,y-1),(x-1,y), (x-1, y+1), (x,y-1), (x, y+1), (x+1,y-1),(x+1,y), (x+1, y+1)]:
+  
+    if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
+      if BombArray[i][j] == -1:
+        BombCount += 1  
+  
+  BombArray[x][y]=BombCount
+  
 PlaceBombs(NumberOfBombs)
-BombArray[5][5] = 2
-VisibleArray[5][5] = 1
+for x in range(0,HLimit):
+    for y in range(0,WLimit):
+       VisibleArray[x][y] = 1
 DrawGrid()
+
+
