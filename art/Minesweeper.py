@@ -62,7 +62,7 @@ def DrawNumber(x,y):
   color("red")
   x += 0.35
   y += 0.25
-  text(StartingX + SquareSize * x,StartingY + SquareSize * y,"1")
+  text(StartingX + SquareSize * x,StartingY + SquareSize * y,"8")
   
 PlaceBombs(NumberOfBombs)
 BombArray[5][5] = 2
