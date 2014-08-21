@@ -104,7 +104,7 @@ def handle_mousedown(Mx,My, button):
              won = True
           DrawGrid()
           if lost == True:
-            image(StartingX,StartingY + (SquareSize*HLimit)/2, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
+            image(StartingX,StartingY, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
           
     elif button == "right": 
       if 0 < Mx < SquareSize*WLimit: 
