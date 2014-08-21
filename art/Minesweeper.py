@@ -1,5 +1,5 @@
 from random import random, randint
-from tealight.art import (color, line, spot, circle, box, image, text, background)
+from tealight.art import (color, line, spot, circle, box, rectangle, image, text, background)
 
 NumberOfBombs = 15
 HLimit = 10
@@ -19,6 +19,8 @@ def PlaceBombs(NumberOfBombs):
   
 def DrawGrid():
   box(250,250,100,100)
+  color("red")
+  box(500,250,100,100)
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
