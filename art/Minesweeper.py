@@ -18,7 +18,7 @@ def PlaceBombs(NumberOfBombs):
       BombsPlaced += 1
   
 def DrawGrid():
-  
+  box(250,250,100,100)
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
