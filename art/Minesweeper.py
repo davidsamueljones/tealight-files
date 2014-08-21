@@ -138,7 +138,7 @@ def FloodBoard(x,y):
       if VisibleArray[i][j] == 0 and BombArray[i][j] >= 0:
         NumberUncovered += 1
         VisibleArray[i][j] = 1
-        if BombArray[i][j] != 0:
+        if BombArray[i][j] = 0:
           FloodBoard(i,j)
       
 NumberOfBombs = 15
