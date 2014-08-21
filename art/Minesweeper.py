@@ -82,6 +82,24 @@ def BombCheck(x,y):
   
   BombArray[x][y]=BombCount
   
+def handle_mousedown(Mx,My):
+  global lastx, lasty
+  
+  lastx = Mx
+  lasty = My
+
+def handle_mousemove(Mx, My, button):
+  global lastx, lasty
+  
+  Mx = Mx - StartingX
+  My = My - StartingY
+  
+  if 0 < Mx < SquareSize*WLimit: 
+    if 0 < My < SquareSize*HLimit:
+      i=Mx/50
+      j=My/50
+      print(i,j)
+
 PlaceBombs(NumberOfBombs)
 for x in range(0,HLimit):
     for y in range(0,WLimit):
