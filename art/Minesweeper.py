@@ -98,7 +98,7 @@ def handle_mousedown(Mx,My, button):
             for y in range(0,WLimit):
               VisibleArray[x][y] = 1
           elif HLimit * WLimit - NumberOfBombs == NumberUncovered:
-             won = False
+             won = True
           DrawGrid()
         
 def IsBomb(x,y):
