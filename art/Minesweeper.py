@@ -19,3 +19,6 @@ def PlaceBombs(NumberOfBombs):
   
 def DrawGrid():
   image(100,100,"misc/YellowFlower.png")
+  
+BombArray(NumberOfBombs)
+DrawGrid()
