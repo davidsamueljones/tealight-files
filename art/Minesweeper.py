@@ -7,7 +7,7 @@ WLimit = 10
 StartingX = 50
 StartingY = 50
 SquareSize = 50
-OffsetX = 0
+OffsetX = -SquareSize
 OffsetY = 0
 
 
