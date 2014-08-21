@@ -131,11 +131,13 @@ def IsBomb(x,y):
    lost = True
      
 def FloodBoard(x,y):
-  global BombArray
+  global BombArray, NumberUncovered
 
   for (i,j) in [(x-1,y-1),(x-1,y), (x-1, y+1), (x,y-1), (x, y+1), (x+1,y-1),(x+1,y), (x+1, y+1)]:
     if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
-      n = 0
+      VisibleArray[i][j] = 1
+      NumberUncovered += 4
+      if BombArray[i][j] =
       
 NumberOfBombs = 1
 NumberUncovered = 0
