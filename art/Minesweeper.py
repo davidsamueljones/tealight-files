@@ -1,5 +1,5 @@
 from random import random, randint
-from tealight.art import (color, line, spot, circle, box, rectangle, image, text, background)
+from tealight.art import (color, line, spot, circle, box, image, text, background)
 
 NumberOfBombs = 15
 HLimit = 10
