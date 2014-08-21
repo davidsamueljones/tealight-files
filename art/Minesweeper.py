@@ -109,9 +109,9 @@ def IsBomb(x,y):
   
 NumberOfBombs = 15
 NumberUncovered = 0
-HLimit = 20
-WLimit = 20
-SquareSize = 25
+HLimit = 10
+WLimit = 10
+SquareSize = 50
 StartingX = screen_width /2 - SquareSize * WLimit/2
 StartingY = 100
 OffsetX = 0
