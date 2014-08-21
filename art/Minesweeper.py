@@ -87,20 +87,20 @@ def BombCheck(x,y):
   
 def handle_mousedown(Mx,My):
   global lastx, lasty, VisibleArray
+  if button == "left":
+    Mx = Mx - StartingX
+    My = My - StartingY
+    
+    if 0 < Mx < SquareSize*WLimit: 
+      if 0 < My < SquareSize*HLimit:
+        i=Mx/SquareSize
+        j=My/SquareSize
+        print(i,j)
+    VisibleArray[lastx][lasty] = 1
+    DrawGrid()
   
-  VisibleArray[lastx][lasty] = 1
-  DrawGrid()
-def handle_mousemove(Mx, My, button):
-  global lastx, lasty
   
-  Mx = Mx - StartingX
-  My = My - StartingY
   
-  if 0 < Mx < SquareSize*WLimit: 
-    if 0 < My < SquareSize*HLimit:
-      i=Mx/SquareSize
-      j=My/SquareSize
-      print(i,j)
 
 PlaceBombs(NumberOfBombs)
 DrawGrid()
