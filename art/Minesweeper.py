@@ -31,6 +31,8 @@ def PlaceBombs(NumberOfBombs):
   
 def DrawGrid():
   global OffsetX, OffsetY
+  OffsetX = 0
+  OffsetY = 0
   for x in range(0,HLimit):
     for y in range(0,WLimit):
       if VisibleArray[x][y]==0:
