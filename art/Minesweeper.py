@@ -22,7 +22,7 @@ def PlaceBombs(NumberOfBombs):
     x = randint(0,9)
     y = randint(0,9)
     if BombArray[x][y] == 0:
-      BombArray[x][y] = 1
+      BombArray[x][y] = -1
       BombsPlaced += 1
   
 def DrawGrid():
