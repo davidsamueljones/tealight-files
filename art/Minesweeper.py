@@ -145,8 +145,8 @@ def FloodBoard(x,y):
       
 NumberOfBombs = 15
 NumberUncovered = 0
-HLimit = 10
-WLimit = 10
+HLimit = 20
+WLimit = HLimit
 SquareSize = 500/HLimit
 StartingX = screen_width /2 - SquareSize * WLimit/2
 StartingY = 100
