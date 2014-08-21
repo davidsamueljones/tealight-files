@@ -60,7 +60,7 @@ def DrawMine(x,y):
 
 def DrawNumber(x,y):
   color("red")
-  x += 0.3
+  x += 0.35
   y += 0.25
   text(StartingX + SquareSize * x,StartingY + SquareSize * y,"1")
   
