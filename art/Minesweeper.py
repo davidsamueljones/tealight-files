@@ -123,7 +123,7 @@ def IsBomb(x,y):
    lost = True
      
 def FloodBoard(x,y)
-   f
+  N = 0
 
 NumberOfBombs = 15
 NumberUncovered = 0
