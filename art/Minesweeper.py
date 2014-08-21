@@ -20,7 +20,7 @@ def PlaceBombs(NumberOfBombs):
 def DrawGrid():
   box(250,250,100,100)
   color("#757575")
-  box(250,250,90,90)
+  box(255,255,90,90)
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
