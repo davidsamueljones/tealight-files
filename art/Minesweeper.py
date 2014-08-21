@@ -21,7 +21,7 @@ def PlaceBombs(NumberOfBombs):
       BombsPlaced += 1
   
 def DrawGrid():
-  DrawCoveredSquare()
+  DrawUncoveredSquare()
  
 def DrawCoveredSquare():
   color("#cccccc")
