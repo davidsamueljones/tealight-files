@@ -23,7 +23,7 @@ def PlaceBombs(NumberOfBombs):
 def DrawGrid():
   DrawCoveredSquare()
 
-def DrawCoveredSquare()
+def DrawCoveredSquare():
   color("#cccccc")
   box(StartingX,StartingX,SquareSize,SquareSize)
   color("#757575")
