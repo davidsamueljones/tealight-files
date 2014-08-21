@@ -39,8 +39,8 @@ def DrawGrid():
         if BombArray[x][y] > 0:
           BombNumber = BombArray[x][y]
           DrawNumber(x,y,BombNumber)
-      if BombArray[x][y] == -1:
-        DrawMine(x,y)
+        elif BombArray[x][y] == -1:
+          DrawMine(x,y)
       OffsetY += SquareSize
     OffsetX += SquareSize
     OffsetY = 0
@@ -87,5 +87,3 @@ for x in range(0,HLimit):
     for y in range(0,WLimit):
        VisibleArray[x][y] = 1
 DrawGrid()
-
-
