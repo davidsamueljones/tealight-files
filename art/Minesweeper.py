@@ -2,21 +2,6 @@ from random import random, randint
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 
-NumberOfBombs = 15
-NumberOfBombsLeft = NumberOfBombs
-HLimit = 10
-WLimit = 10
-SquareSize = 50
-StartingX = screen_width /2 - SquareSize * 5
-StartingY = 100
-OffsetX = 0
-OffsetY = 0
-lastx = 0
-lasty = 0
-
-BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
-VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
-
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
   while BombsPlaced < NumberOfBombs + 1:
@@ -105,10 +90,25 @@ def handle_mousedown(Mx,My, button):
         DrawGrid()
         
 def IsBomb(x,y):
+  global lost
   if BombArray[x][y] == -1:
-   print "lose"
+   lost = True
      
   
+NumberOfBombs = 15
+NumberOfBombsLeft = NumberOfBombs
+HLimit = 10
+WLimit = 10
+SquareSize = 50
+StartingX = screen_width /2 - SquareSize * 5
+StartingY = 100
+OffsetX = 0
+OffsetY = 0
+lastx = 0
+lasty = 0
+lost = False
 
+BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
+VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 PlaceBombs(NumberOfBombs)
 DrawGrid()
