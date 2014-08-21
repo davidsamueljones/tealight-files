@@ -54,7 +54,9 @@ def DrawUncoveredSquare():
 
 def DrawMine(x,y):
   color("red")
-  spot(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5, 10)
+  x += 0.5
+  y += 0.5
+  spot(StartingX + SquareSize * x,StartingY + SquareSize * y, 10)
 
 def DrawNumber(x,y):
   color("red")
