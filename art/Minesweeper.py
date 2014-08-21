@@ -88,8 +88,8 @@ def BombCheck(x,y):
 def handle_mousedown(Mx,My, button):
   global lastx, lasty, VisibleArray
   
-    Mx = Mx - StartingX
-    My = My - StartingY
+  Mx = Mx - StartingX
+  My = My - StartingY
   if button == "left":
     
     if 0 < Mx < SquareSize*WLimit: 
