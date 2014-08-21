@@ -4,6 +4,9 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 NumberOfBombs = 15
 HLimit = 10
 WLimit = 10
+StartingX = 50
+StartingY = 50
+SquareSize = 25
 
 BombArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
 VisibleArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
@@ -19,9 +22,9 @@ def PlaceBombs(NumberOfBombs):
   
 def DrawGrid():
   color("#cccccc")
-  box(50,50,100,100)
+  box(StartingX,StartingX,SquareSize,SquareSize)
   color("#757575")
-  box(55,55,90,90)
+  box(StartingX + (SquareSize * 0.1)/2,55,StartingX + (SquareSize * 0.1)/2,SquareSize * 0.9)
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
