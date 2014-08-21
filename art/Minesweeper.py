@@ -54,11 +54,11 @@ def DrawUncoveredSquare():
 
 def DrawMine(x,y):
   color("red")
-  spot(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5, 10)
+  spot(StartingX + SquareSize * x.5,StartingY + SquareSize * y + SquareSize * 0.5, 10)
 
 def DrawNumber(x,y):
   color("red")
-  text(StartingX + SquareSize * x ,StartingY + SquareSize * y,"8")
+  text(StartingX + SquareSize * x,StartingY + SquareSize * y,"2")
   
 PlaceBombs(NumberOfBombs)
 BombArray[5][5] = 2
