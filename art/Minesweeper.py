@@ -30,7 +30,7 @@ def DrawGrid():
       OffsetY += SquareSize
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
-      elif VisibleArray[x][y] == 1
+      elif VisibleArray[x][y] == 1:
         DrawUncoveredSquare()
     OffsetX += SquareSize
     OffsetY = 0
