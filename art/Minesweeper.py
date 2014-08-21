@@ -34,6 +34,8 @@ def DrawGrid():
         DrawCoveredSquare()
       elif VisibleArray[x][y] == 1:
         DrawUncoveredSquare()
+      if BombArray[x][y] = -1
+        DrawMine()
     OffsetX += SquareSize
     OffsetY = 0
    
@@ -48,6 +50,11 @@ def DrawUncoveredSquare():
   box(StartingX + OffsetX,StartingY + OffsetY,SquareSize,SquareSize)
   color("#cccccc")
   box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingY + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
+
+def DrawMine()
+  color("red")
+  spot(StartingX + SquareSize * x,StartingY + SquareSize * y)
+  
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
