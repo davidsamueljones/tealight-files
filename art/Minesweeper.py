@@ -31,7 +31,7 @@ def DrawGrid():
         elif BombArray[x][y] == -1:
           if x != lastx and y != lasty:
             DrawMine(x,y, "black")
-          else
+          else:
             DrawMine(x,y, "red")
       OffsetY += SquareSize
     OffsetX += SquareSize
