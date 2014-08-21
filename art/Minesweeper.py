@@ -30,6 +30,8 @@ def DrawGrid():
       OffsetY += SquareSize
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
+      elif VisibleArray[x][y] == 1
+        DrawUncoveredSquare()
     OffsetX += SquareSize
     OffsetY = 0
    
@@ -41,9 +43,9 @@ def DrawCoveredSquare():
 
 def DrawUncoveredSquare():
   color("#757575")
-  box(StartingX,StartingX,SquareSize,SquareSize)
+  box(StartingX + OffsetX,StartingY + OffsetY,SquareSize,SquareSize)
   color("#cccccc")
-  box(StartingX + (SquareSize * 0.1)/2,StartingX + (SquareSize * 0.1)/2,SquareSize * 0.9,SquareSize * 0.9)
+  box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingY + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
