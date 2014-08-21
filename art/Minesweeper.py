@@ -10,7 +10,8 @@ StartingX = screen_width /2 - SquareSize * 5
 StartingY = 100
 OffsetX = 0
 OffsetY = 0
-
+lastx = 0
+lasty = 0
 
 BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
