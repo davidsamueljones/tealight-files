@@ -140,7 +140,7 @@ def FloodBoard(x,y):
         NumberUncovered += 1
         FloodBoard(i,j)
       
-NumberOfBombs = 1
+NumberOfBombs = 15
 NumberUncovered = 0
 HLimit = 10
 WLimit = 10
