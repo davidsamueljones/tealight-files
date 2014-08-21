@@ -76,18 +76,19 @@ def handle_mousedown(Mx,My, button):
   
   Mx = Mx - StartingX
   My = My - StartingY
-  if button == "left":
+  if lost = False:
+    if button == "left":
     
-    if 0 < Mx < SquareSize*WLimit: 
-      if 0 < My < SquareSize*HLimit:
-        i=Mx/SquareSize
-        j=My/SquareSize
-        print(i,j)
-        lastx = i
-        lasty = j
-        VisibleArray[lastx][lasty] = 1
-        IsBomb(lastx,lasty)
-        DrawGrid()
+      if 0 < Mx < SquareSize*WLimit: 
+        if 0 < My < SquareSize*HLimit:
+          i=Mx/SquareSize
+          j=My/SquareSize
+          print(i,j)
+          lastx = i
+          lasty = j
+          VisibleArray[lastx][lasty] = 1
+          IsBomb(lastx,lasty)
+          DrawGrid()
         
 def IsBomb(x,y):
   global lost
