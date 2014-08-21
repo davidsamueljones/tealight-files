@@ -59,6 +59,7 @@ def DrawMine(x,y):
   spot(StartingX + SquareSize * x,StartingY + SquareSize * y, 10)
 
 def DrawNumber(x,y):
+  global BombArray
   color("red")
   x += 0.35
   y += 0.25
