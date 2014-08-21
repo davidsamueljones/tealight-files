@@ -25,8 +25,8 @@ def PlaceBombs(NumberOfBombs):
 def DrawGrid():
   OffsetX = 0
   OffsetY = 0
-  for x in range(0,10):
-    for y in range(0,10):
+  for x in range(0,HLimit):
+    for y in range(0,WLimit):
       OffsetY += SquareSize
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
@@ -36,7 +36,7 @@ def DrawCoveredSquare():
   color("#cccccc")
   box(StartingX,StartingX,SquareSize,SquareSize)
   color("#757575")
-  box(StartingX + (SquareSize * 0.1)/2,StartingX + (SquareSize * 0.1)/2,SquareSize * 0.9,SquareSize * 0.9)
+  box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingX + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
 
 def DrawUncoveredSquare():
   color("#757575")
