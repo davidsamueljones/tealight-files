@@ -96,7 +96,7 @@ def handle_mousedown(Mx,My, button):
             print NumberUncovered
             IsBomb(lastx,lasty)
           if lost == True:
-            image(100,100, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
+           image(100,100, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
            for x in range(0,HLimit):
             for y in range(0,WLimit):
               if BombArray[x][y] == -1:
