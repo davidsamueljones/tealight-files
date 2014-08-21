@@ -1,8 +1,12 @@
 from random import random, randint
 
-NumberOfBombs = 10
+NumberOfBombs = 15
+HLimit = 10
+WLimit = 10
 BombsPlaced = 0
-BombArray = [[0 for x in range(10)] for x in range(10)]
+
+BombArray = [[0 for x in range(Hlimit)] for y in range(WLimit)]
+VisibleArray = [[0 for x in range(Hlimit)] for y in range(WLimit)]
 
 while BombsPlaced < NumberOfBombs + 1:
   x = randint(0,9)
@@ -12,7 +16,3 @@ while BombsPlaced < NumberOfBombs + 1:
     BombsPlaced += 1
   
   
-
-print BombArray[x][y]
-print x
-print y
