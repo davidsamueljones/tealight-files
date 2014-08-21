@@ -103,8 +103,11 @@ def handle_mousedown(Mx,My, button):
         VisibleArray[lastx][lasty] = 1
         IsBomb(lastx,lasty)
         DrawGrid()
-  
-  
+        
+def IsBomb(x,y):
+  if BombArray[x,y] == -1:
+
+     
   
 
 PlaceBombs(NumberOfBombs)
