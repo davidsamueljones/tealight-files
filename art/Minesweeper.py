@@ -90,9 +90,9 @@ def handle_mousedown(Mx,My, button):
           IsBomb(lastx,lasty)
           DrawGrid()
           if lost == True:
-               for x in range(0,HLimit):
-                  for y in range(0,WLimit):
-                    VisibleArray[x][y] = 1
+           for x in range(0,HLimit):
+            for y in range(0,WLimit):
+              VisibleArray[x][y] = 1
            DrawMine(lastx,lasty,"red")
         
 def IsBomb(x,y):
