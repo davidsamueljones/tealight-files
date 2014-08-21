@@ -34,7 +34,7 @@ def DrawGrid():
         DrawUncoveredSquare()
         if BombArray[x][y] > 0:
           BombNumber = BombArray[x][y]
-          DrawNumber(x,y,)
+          DrawNumber(x,y,BombNumber)
       if BombArray[x][y] == -1:
         DrawMine(x,y)
       OffsetY += SquareSize
