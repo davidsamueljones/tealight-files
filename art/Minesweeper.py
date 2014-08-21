@@ -104,7 +104,7 @@ def handle_mousedown(Mx,My, button):
              won = True
           DrawGrid()
           if lost == True:
-            sleep(500)
+            sleep(5000)
             image(StartingX,StartingY, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
           
     elif button == "right": 
