@@ -78,7 +78,7 @@ def BombCheck(x,y):
   BombArray[x][y]=BombCount
 
 def handle_mousedown(Mx,My, button):
-  global lastx, lasty, VisibleArray, lost, won, NumberUncovered
+  global lastx, lasty, VisibleArray, BombArray, lost, won, NumberUncovered
   
   Mx = Mx - StartingX
   My = My - StartingY
@@ -98,7 +98,8 @@ def handle_mousedown(Mx,My, button):
           if lost == True:
            for x in range(0,HLimit):
             for y in range(0,WLimit):
-              VisibleArray[x][y] = 1
+              if BombArray[x][y] == -1 
+                VisibleArray[x][y] = 1
           elif HLimit * WLimit - NumberOfBombs == NumberUncovered:
              won = True
           DrawGrid()
