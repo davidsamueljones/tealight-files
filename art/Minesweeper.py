@@ -105,7 +105,7 @@ def IsBomb(x,y):
    lost = True
      
   
-NumberOfBombs = 5
+NumberOfBombs = 1
 NumberUncovered = 0
 HLimit = 10
 WLimit = 10
