@@ -4,7 +4,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 NumberOfBombs = 15
 HLimit = 10
 WLimit = 10
-StartingX = 50
+StartingX = 100
 StartingY = 50
 SquareSize = 50
 OffsetX = 0
@@ -13,8 +13,6 @@ OffsetY = 0
 
 BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
-VisibleArray[5][8] = 1
-
 
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
