@@ -61,7 +61,7 @@ def DrawUncoveredSquare():
   box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingY + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
 
 def DrawMine(x,y):
-  color("red")
+  color("black")
   x += 0.5
   y += 0.5
   spot(StartingX + SquareSize * x,StartingY + SquareSize * y, 10)
@@ -88,9 +88,9 @@ def BombCheck(x,y):
 def handle_mousedown(Mx,My, button):
   global lastx, lasty, VisibleArray
   
-  if button == "left":
     Mx = Mx - StartingX
     My = My - StartingY
+  if button == "left":
     
     if 0 < Mx < SquareSize*WLimit: 
       if 0 < My < SquareSize*HLimit:
