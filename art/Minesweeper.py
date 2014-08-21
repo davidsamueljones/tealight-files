@@ -128,7 +128,7 @@ def IsBomb(x,y):
 def FloodBoard(x,y):
   N = 0
 
-NumberOfBombs = 15
+NumberOfBombs = 1
 NumberUncovered = 0
 HLimit = 10
 WLimit = 10
