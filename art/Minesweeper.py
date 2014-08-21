@@ -87,7 +87,7 @@ def handle_mousedown(Mx,My):
   global lastx, lasty, VisibleArray
   
   VisibleArray[lastx][lasty] = 1
-
+  DrawGrid()
 def handle_mousemove(Mx, My, button):
   global lastx, lasty
   
