@@ -75,7 +75,7 @@ def BombCheck(x,y):
   BombArray[x][y]=BombCount
 
 def handle_mousedown(Mx,My, button):
-  global lastx, lasty, VisibleArray, lost, won
+  global lastx, lasty, VisibleArray, lost, won, NumberUncovered
   
   Mx = Mx - StartingX
   My = My - StartingY
