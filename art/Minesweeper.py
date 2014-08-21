@@ -97,6 +97,9 @@ def handle_mousedown(Mx,My, button):
         i=Mx/SquareSize
         j=My/SquareSize
         print(i,j)
+    
+    lastx = i
+    lasty = j
     VisibleArray[lastx][lasty] = 1
     DrawGrid()
   
