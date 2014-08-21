@@ -87,6 +87,7 @@ def BombCheck(x,y):
   
 def handle_mousedown(Mx,My, button):
   global lastx, lasty, VisibleArray
+  
   if button == "left":
     Mx = Mx - StartingX
     My = My - StartingY
