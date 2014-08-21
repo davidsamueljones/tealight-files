@@ -58,7 +58,7 @@ def DrawMine(x,y):
 
 def DrawNumber(x,y):
   color("red")
-  text(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5,"Hello")
+  text(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5,"1")
   
 PlaceBombs(NumberOfBombs)
 BombArray[5][5] = 2
