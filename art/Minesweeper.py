@@ -21,7 +21,7 @@ def DrawGrid():
   OffsetX = 0
   OffsetY = 0
   color("#cccccc")
-  box(StartingX - 1,StartingY - 1,SquareSize * WLimit + 2,SquareSize * HLimit +2)
+  box(StartingX - 2,StartingY - 2,SquareSize * WLimit + 4,SquareSize * HLimit +4)
   for x in range(0,HLimit):
     for y in range(0,WLimit):
       if VisibleArray[x][y]==0:
