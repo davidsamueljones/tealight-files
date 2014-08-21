@@ -64,7 +64,7 @@ def DrawNumber(x,y,NumberOfMines):
   text(StartingX + SquareSize * x,StartingY + SquareSize * y, NumberOfMines)
   
 def DrawFlag(x,y):
-  image(x,y,"http://www.ezimba.com/work/140822C/ezimba16125759306700.gif")
+  image(StartingX + SquareSize * x,StartingY + SquareSize * y,"http://www.ezimba.com/work/140822C/ezimba16125759306700.gif")
 def BombCheck(x,y):
   global BombArray
   BombCount = 0
