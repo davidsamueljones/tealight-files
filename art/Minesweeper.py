@@ -6,8 +6,8 @@ from tealight.utils import (sleep)
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
   while BombsPlaced < NumberOfBombs:
-    x = randint(0,9)
-    y = randint(0,9)
+    x = randint(0,HLimit -1)
+    y = randint(0,VLimit -1)
     if BombArray[x][y] == 0:
       BombArray[x][y] = -1
       BombsPlaced += 1
