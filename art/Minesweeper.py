@@ -19,8 +19,8 @@ VisibleArray[5][8] = 1
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
   while BombsPlaced < NumberOfBombs + 1:
-    x = randint(1,9)
-    y = randint(1,9)
+    x = randint(0,9)
+    y = randint(0,9)
     if BombArray[x][y] == 0:
       BombArray[x][y] = -1
       BombsPlaced += 1
