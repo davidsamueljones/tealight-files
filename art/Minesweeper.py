@@ -85,8 +85,6 @@ def BombCheck(x,y):
 def handle_mousedown(Mx,My):
   global lastx, lasty, VisibleArray
   
-  lastx = Mx
-  lasty = My
   VisibleArray[lastx][lasty] = 1
 
 def handle_mousemove(Mx, My, button):
