@@ -148,6 +148,7 @@ NumberUncovered = 0
 HLimit = 10
 WLimit = 10
 SquareSize = 50
+SquareSize = (500*500) / (HLimit*WLimit)
 StartingX = screen_width /2 - SquareSize * WLimit/2
 StartingY = 100
 OffsetX = 0
