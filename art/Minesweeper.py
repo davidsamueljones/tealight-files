@@ -1,4 +1,5 @@
 from random import random, randint
+from tealight.art import (color, line, spot, circle, box, image, text, background)
 
 NumberOfBombs = 15
 HLimit = 10
@@ -17,4 +18,4 @@ BombsPlaced = 0
       BombsPlaced += 1
   
 def DrawGrid()
-  image
+  image(100,100,"http://i.imgur.com/tu91rk0.png")
