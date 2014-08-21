@@ -109,9 +109,9 @@ def handle_mousedown(Mx,My, button):
           j=My/SquareSize
           lastx = i
           lasty = j
-          if VisibleArray[lastx][lasty] = 0:
+          if VisibleArray[lastx][lasty] == 0:
             VisibleArray[lastx][lasty] = 2
-          elif VisibleArray[lastx][lasty] = 2:
+          elif VisibleArray[lastx][lasty] == 2:
             VisibleArray[lastx][lasty] = 0
           DrawGrid()
 
