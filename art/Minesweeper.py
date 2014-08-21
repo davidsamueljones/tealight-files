@@ -11,8 +11,8 @@ OffsetX = 0
 OffsetY = 0
 
 
-BombArray = [[0 for x in range(1,HLimit)] for y in range(0,WLimit)]
-VisibleArray = [[0 for x in range(1,HLimit)] for y in range(0,WLimit)]
+BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
+VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 VisibleArray[5][8] = 1
 
 
