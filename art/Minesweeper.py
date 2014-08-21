@@ -18,4 +18,4 @@ def PlaceBombs(NumberOfBombs):
       BombsPlaced += 1
   
 def DrawGrid():
-  image(100,100,'http://i.imgur.com/tu91rk0.png')
+  image(100,100,"misc/YellowFlower.png")
