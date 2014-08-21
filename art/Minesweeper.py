@@ -30,6 +30,8 @@ def DrawGrid():
     for y in range(0,WLimit):
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
+        if BombArray[x][y] > 0:
+          DrawNumber(x,y)
       elif VisibleArray[x][y] == 1:
         DrawUncoveredSquare()
       if BombArray[x][y] == -1:
@@ -53,7 +55,9 @@ def DrawUncoveredSquare():
 def DrawMine(x,y):
   color("red")
   spot(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5, 10)
-  
+
+def DrawNumber(x,y):
+  text()
   
 PlaceBombs(NumberOfBombs)
 DrawGrid()
