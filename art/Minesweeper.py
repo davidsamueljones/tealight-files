@@ -4,9 +4,9 @@ from tealight.art import (screen_width, screen_height)
 NumberOfBombs = 15
 HLimit = 10
 WLimit = 10
+SquareSize = 50
 StartingX = screen_width /2 - SquareSize * 5
 StartingY = 50
-SquareSize = 50
 OffsetX = 0
 OffsetY = 0
 
