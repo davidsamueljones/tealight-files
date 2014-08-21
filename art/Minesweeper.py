@@ -138,6 +138,7 @@ def FloodBoard(x,y):
   
     if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
       n = 0
+      
 NumberOfBombs = 1
 NumberUncovered = 0
 HLimit = 10
