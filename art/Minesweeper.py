@@ -30,10 +30,10 @@ def DrawGrid():
     for y in range(0,WLimit):
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
-        if BombArray[x][y] > 0:
-          DrawNumber(x,y)
       elif VisibleArray[x][y] == 1:
         DrawUncoveredSquare()
+        if BombArray[x][y] > 0:
+          DrawNumber(x,y)
       if BombArray[x][y] == -1:
         DrawMine(x,y)
       OffsetY += SquareSize
