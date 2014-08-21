@@ -29,7 +29,7 @@ def DrawGrid():
           BombNumber = BombArray[x][y]
           DrawNumber(x,y,BombNumber)
         elif BombArray[x][y] == -1:
-          DrawMine(x,y)
+          DrawMine(x,y, "black")
       OffsetY += SquareSize
     OffsetX += SquareSize
     OffsetY = 0
@@ -46,8 +46,8 @@ def DrawUncoveredSquare():
   color("#cccccc")
   box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingY + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
 
-def DrawMine(x,y):
-  color("black")
+def DrawMine(x,y, colour):
+  color(colour)
   x += 0.5
   y += 0.5
   spot(StartingX + SquareSize * x,StartingY + SquareSize * y, 10)
@@ -94,6 +94,10 @@ def IsBomb(x,y):
   global lost
   if BombArray[x][y] == -1:
    lost = True
+   for x in range(0,HLimit):
+    for y in range(0,WLimit):
+      VisibleArray[x][y] = 1
+   DrawMine(lastx,lasty,"red")
      
   
 NumberOfBombs = 15
@@ -101,7 +105,7 @@ NumberOfBombsLeft = NumberOfBombs
 HLimit = 10
 WLimit = 10
 SquareSize = 50
-StartingX = screen_width /2 - SquareSize * 5
+StartingX = screen_width /2 - SquareSize * WLimit/2
 StartingY = 100
 OffsetX = 0
 OffsetY = 0
