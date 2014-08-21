@@ -9,7 +9,7 @@ BombArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
 VisibleArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
 
 def PlaceBombs(NumberOfBombs):
-BombsPlaced = 0
+  BombsPlaced = 0
   while BombsPlaced < NumberOfBombs + 1:
     x = randint(0,9)
     y = randint(0,9)
