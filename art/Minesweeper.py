@@ -137,7 +137,6 @@ def FloodBoard(x,y):
     if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
       VisibleArray[i][j] = 1
       NumberUncovered += 4
-      if BombArray[i][j] =
       
 NumberOfBombs = 1
 NumberUncovered = 0
