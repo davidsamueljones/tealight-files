@@ -96,7 +96,6 @@ def handle_mousedown(Mx,My, button):
             print NumberUncovered
             IsBomb(lastx,lasty)
           if lost == True:
-           image(100,100, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
            for x in range(0,HLimit):
             for y in range(0,WLimit):
               if BombArray[x][y] == -1:
@@ -104,6 +103,9 @@ def handle_mousedown(Mx,My, button):
           elif HLimit * WLimit - NumberOfBombs == NumberUncovered:
              won = True
           DrawGrid()
+          if lost == True:
+            image(100,100, " http://www.ezimba.com/work/140822C/ezimba16125715215800.png")
+          
     elif button == "right": 
       if 0 < Mx < SquareSize*WLimit: 
         if 0 < My < SquareSize*HLimit:
