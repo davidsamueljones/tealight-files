@@ -2,6 +2,7 @@ from random import random, randint
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 from tealight.utils import (sleep)
+
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
   while BombsPlaced < NumberOfBombs:
@@ -65,6 +66,7 @@ def DrawNumber(x,y,NumberOfMines):
   
 def DrawFlag(x,y):
   image(StartingX + SquareSize * x,StartingY + SquareSize * y,"http://www.ezimba.com/work/140822C/ezimba16125759306700.gif")
+
 def BombCheck(x,y):
   global BombArray
   BombCount = 0
@@ -94,7 +96,10 @@ def handle_mousedown(Mx,My, button):
             VisibleArray[lastx][lasty] = 1
             NumberUncovered += 1
             print NumberUncovered
-            IsBomb(lastx,lasty)
+            if BombArray[lastx][lasty] == 0:
+              FloodBoard(lastx,lasty)
+            else:
+              IsBomb(lastx,lasty)
           if lost == True:
            for x in range(0,HLimit):
             for y in range(0,WLimit):
@@ -126,7 +131,12 @@ def IsBomb(x,y):
    lost = True
      
 def FloodBoard(x,y):
-  N = 0
+  global BombArray
+  BombCount = 0
+  
+  for (i,j) in [(x-1,y-1),(x-1,y), (x-1, y+1), (x,y-1), (x, y+1), (x+1,y-1),(x+1,y), (x+1, y+1)]:
+  
+    if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
 
 NumberOfBombs = 1
 NumberUncovered = 0
