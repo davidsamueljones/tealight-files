@@ -7,7 +7,7 @@ WLimit = 10
 StartingX = 50
 StartingY = 50
 SquareSize = 50
-OffsetX = -SquareSize
+OffsetX = 0
 OffsetY = 0
 
 
@@ -29,13 +29,13 @@ def DrawGrid():
   global OffsetX, OffsetY
   for x in range(0,HLimit):
     for y in range(0,WLimit):
-      OffsetY += SquareSize
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
       elif VisibleArray[x][y] == 1:
         DrawUncoveredSquare()
       if BombArray[x][y] == -1:
         DrawMine(x,y)
+      OffsetY += SquareSize
     OffsetX += SquareSize
     OffsetY = 0
    
