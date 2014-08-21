@@ -60,8 +60,8 @@ def DrawMine(x,y):
 
 def DrawNumber(x,y):
   color("red")
-  x += 0.5
-  y += 0.5
+  x += 0.25
+  y += 0.25
   text(StartingX + SquareSize * x,StartingY + SquareSize * y,"2")
   
 PlaceBombs(NumberOfBombs)
