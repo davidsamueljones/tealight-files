@@ -35,7 +35,7 @@ def DrawGrid():
    
 def DrawCoveredSquare():
   color("#cccccc")
-  box(StartingX + OffsetX,StartingY + OffstY,SquareSize,SquareSize)
+  box(StartingX + OffsetX,StartingY + OffsetY,SquareSize,SquareSize)
   color("#757575")
   box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingY + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
 
