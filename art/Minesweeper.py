@@ -94,12 +94,12 @@ def handle_mousedown(Mx,My, button):
           lasty = j
           if VisibleArray[lastx][lasty] == 0:
             VisibleArray[lastx][lasty] = 1
-            print NumberUncovered
+            NumberUncovered += 1
             if BombArray[lastx][lasty] == 0:
               FloodBoard(lastx,lasty)
             else:
               IsBomb(lastx,lasty)
-              NumberUncovered += 1
+          print NumberUncovered
           if lost == True:
            for x in range(0,HLimit):
             for y in range(0,WLimit):
