@@ -31,7 +31,7 @@ def DrawGrid():
       if VisibleArray[x][y]==0:
         DrawCoveredSquare()
     OffsetX += SquareSize
-    Offsety = 0
+    OffsetY = 0
    
 def DrawCoveredSquare():
   color("#cccccc")
