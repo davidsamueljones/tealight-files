@@ -106,7 +106,7 @@ def handle_mousedown(Mx,My, button):
         
 def IsBomb(x,y):
   if BombArray[x][y] == -1:
-   lastx = 0
+   print "lose"
      
   
 
