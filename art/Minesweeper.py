@@ -134,9 +134,10 @@ def FloodBoard(x,y):
   global BombArray, VisibleArray, NumberUncovered
 
   for (i,j) in [(x-1,y-1),(x-1,y), (x-1, y+1), (x,y-1), (x, y+1), (x+1,y-1),(x+1,y), (x+1, y+1)]:
-    if (i >= 0 and i < WLimit and j >= 0 and j < HLimit) and VisibleArray[i][j] = 1:
-      VisibleArray[i][j] = 1
-      NumberUncovered += 1
+    if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
+      if VisibleArray[i][j] = 0
+        VisibleArray[i][j] = 1
+        NumberUncovered += 1
       
 NumberOfBombs = 1
 NumberUncovered = 0
