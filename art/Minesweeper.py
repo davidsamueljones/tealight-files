@@ -22,11 +22,18 @@ def PlaceBombs(NumberOfBombs):
   
 def DrawGrid():
   DrawCoveredSquare()
-
+ 
 def DrawCoveredSquare():
   color("#cccccc")
   box(StartingX,StartingX,SquareSize,SquareSize)
   color("#757575")
   box(StartingX + (SquareSize * 0.1)/2,StartingX + (SquareSize * 0.1)/2,SquareSize * 0.9,SquareSize * 0.9)
+
+def DrawUncoveredSquare():
+  color("#757575")
+  box(StartingX,StartingX,SquareSize,SquareSize)
+  color("#cccccc")
+  box(StartingX + (SquareSize * 0.1)/2,StartingX + (SquareSize * 0.1)/2,SquareSize * 0.9,SquareSize * 0.9)
+  
 PlaceBombs(NumberOfBombs)
 DrawGrid()
