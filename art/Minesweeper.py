@@ -6,7 +6,7 @@ WLimit = 10
 BombsPlaced = 0
 
 BombArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
-VisibleArray = [[0 for x in range(Hlimit)] for y in range(WLimit)]
+VisibleArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
 
 while BombsPlaced < NumberOfBombs + 1:
   x = randint(0,9)
