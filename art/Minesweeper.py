@@ -51,7 +51,7 @@ def DrawUncoveredSquare():
   color("#cccccc")
   box(StartingX + (SquareSize * 0.1)/2 + OffsetX,StartingY + (SquareSize * 0.1)/2 + OffsetY,SquareSize * 0.9,SquareSize * 0.9)
 
-def DrawMine()
+def DrawMine():
   color("red")
   spot(StartingX + SquareSize * x,StartingY + SquareSize * y)
   
