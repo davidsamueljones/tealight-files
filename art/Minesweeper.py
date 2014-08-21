@@ -57,7 +57,7 @@ def DrawMine(x,y):
   spot(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5, 10)
 
 def DrawNumber(x,y):
-  text()
+  text(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5,5)
   
 PlaceBombs(NumberOfBombs)
 BombArray[5][5] = 2
