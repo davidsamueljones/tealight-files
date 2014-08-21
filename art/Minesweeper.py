@@ -29,7 +29,10 @@ def DrawGrid():
           BombNumber = BombArray[x][y]
           DrawNumber(x,y,BombNumber)
         elif BombArray[x][y] == -1:
-          DrawMine(x,y, "black")
+          if x != lastx and y != lasty
+            DrawMine(x,y, "black")
+          else
+            DrawMine(x,y, "red")
       OffsetY += SquareSize
     OffsetX += SquareSize
     OffsetY = 0
@@ -92,8 +95,7 @@ def handle_mousedown(Mx,My, button):
            for x in range(0,HLimit):
             for y in range(0,WLimit):
               VisibleArray[x][y] = 1
-           DrawGrid()
-           DrawMine(lastx,lasty,"red")
+          DrawGrid()
         
 def IsBomb(x,y):
   global lost
