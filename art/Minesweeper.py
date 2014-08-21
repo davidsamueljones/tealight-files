@@ -53,7 +53,7 @@ def DrawUncoveredSquare():
 
 def DrawMine():
   color("red")
-  spot(StartingX + SquareSize * x,StartingY + SquareSize * y)
+  spot(StartingX + SquareSize * x,StartingY + SquareSize * y, 10)
   
   
 PlaceBombs(NumberOfBombs)
