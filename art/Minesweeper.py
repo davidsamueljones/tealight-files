@@ -61,5 +61,5 @@ def DrawNumber(x,y):
   
 PlaceBombs(NumberOfBombs)
 BombArray[5][5] = 2
-
+VisibleArray[5][5] = 1
 DrawGrid()
