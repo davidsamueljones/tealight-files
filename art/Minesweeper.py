@@ -60,4 +60,6 @@ def DrawNumber(x,y):
   text()
   
 PlaceBombs(NumberOfBombs)
+BombArray[5][5] = 2
+
 DrawGrid()
