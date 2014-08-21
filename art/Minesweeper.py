@@ -96,8 +96,8 @@ def handle_mousemove(Mx, My, button):
   
   if 0 < Mx < SquareSize*WLimit: 
     if 0 < My < SquareSize*HLimit:
-      i=Mx/50
-      j=My/50
+      i=Mx/SquareSize
+      j=My/SquareSize
       print(i,j)
 
 PlaceBombs(NumberOfBombs)
