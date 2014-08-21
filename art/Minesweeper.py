@@ -2,7 +2,7 @@ from random import random, randint
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 
-NumberOfBombs = 10
+NumberOfBombs = 15
 HLimit = 10
 WLimit = 10
 SquareSize = 50
