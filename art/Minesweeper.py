@@ -86,10 +86,6 @@ def BombCheck(x,y):
   
   BombArray[x][y]=BombCount
 
-def IsBomb(x,y):
-  if BombArray[x,y] == -1:
-
-    
 def handle_mousedown(Mx,My, button):
   global lastx, lasty, VisibleArray
   
