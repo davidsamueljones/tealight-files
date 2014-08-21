@@ -90,6 +90,7 @@ def handle_mousedown(Mx,My, button):
           lastx = i
           lasty = j
           VisibleArray[lastx][lasty] = 1
+          NumberUncovered += 1
           IsBomb(lastx,lasty)
           if lost == True:
            for x in range(0,HLimit):
