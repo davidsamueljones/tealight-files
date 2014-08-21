@@ -3,6 +3,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 
 NumberOfBombs = 15
+NumberOfBombsLeft = NumberOfBombs
 HLimit = 10
 WLimit = 10
 SquareSize = 50
@@ -84,7 +85,10 @@ def BombCheck(x,y):
         BombCount += 1  
   
   BombArray[x][y]=BombCount
-  
+
+def IsBomb(x,y):
+  if BombArray[x,y] == -1:
+    
 def handle_mousedown(Mx,My, button):
   global lastx, lasty, VisibleArray
   
@@ -100,6 +104,7 @@ def handle_mousedown(Mx,My, button):
         lastx = i
         lasty = j
         VisibleArray[lastx][lasty] = 1
+        IsBomb(lastx,lasty)
         DrawGrid()
   
   
