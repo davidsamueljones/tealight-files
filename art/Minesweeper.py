@@ -6,7 +6,7 @@ HLimit = 10
 WLimit = 10
 StartingX = 50
 StartingY = 50
-SquareSize = 100
+SquareSize = 50
 
 BombArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
 VisibleArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
