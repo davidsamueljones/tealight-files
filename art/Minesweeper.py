@@ -97,7 +97,7 @@ def IsBomb(x,y):
    for x in range(0,HLimit):
     for y in range(0,WLimit):
       VisibleArray[x][y] = 1
-   DrawMine(50,50,"red")
+  DrawMine(50,50,"red")
      
   
 NumberOfBombs = 15
