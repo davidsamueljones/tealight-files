@@ -122,7 +122,7 @@ def IsBomb(x,y):
   if BombArray[x][y] == -1:
    lost = True
      
-def FloodBoard(x,y)
+def FloodBoard(x,y):
   N = 0
 
 NumberOfBombs = 15
