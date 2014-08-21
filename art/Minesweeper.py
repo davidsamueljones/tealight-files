@@ -86,13 +86,13 @@ def handle_mousedown(Mx,My, button):
         if 0 < My < SquareSize*HLimit:
           i=Mx/SquareSize
           j=My/SquareSize
-          print(i,j)
           lastx = i
           lasty = j
-          VisibleArray[lastx][lasty] = 1
-          NumberUncovered += 1
-          print NumberUncovered
-          IsBomb(lastx,lasty)
+          if VisibleArray[lastx][lasty] != 1:
+            VisibleArray[lastx][lasty] = 1
+            NumberUncovered += 1
+            print NumberUncovered
+            IsBomb(lastx,lasty)
           if lost == True:
            for x in range(0,HLimit):
             for y in range(0,WLimit):
