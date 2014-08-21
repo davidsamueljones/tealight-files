@@ -76,7 +76,7 @@ def handle_mousedown(Mx,My, button):
   
   Mx = Mx - StartingX
   My = My - StartingY
-  if lost = False:
+  if lost == False:
     if button == "left":
     
       if 0 < Mx < SquareSize*WLimit: 
