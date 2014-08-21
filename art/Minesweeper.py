@@ -33,7 +33,8 @@ def DrawGrid():
       elif VisibleArray[x][y] == 1:
         DrawUncoveredSquare()
         if BombArray[x][y] > 0:
-          DrawNumber(x,y)
+          BombNumber = BombArray[x][y]
+          DrawNumber(x,y,)
       if BombArray[x][y] == -1:
         DrawMine(x,y)
       OffsetY += SquareSize
@@ -58,12 +59,11 @@ def DrawMine(x,y):
   y += 0.5
   spot(StartingX + SquareSize * x,StartingY + SquareSize * y, 10)
 
-def DrawNumber(x,y):
-  global BombArray
+def DrawNumber(x,y,NumberOfMines):
   color("red")
   x += 0.35
   y += 0.25
-  text(StartingX + SquareSize * x,StartingY + SquareSize * y, BombArray[x][y])
+  text(StartingX + SquareSize * x,StartingY + SquareSize * y, NumberOfMines)
   
 PlaceBombs(NumberOfBombs)
 BombArray[5][5] = 2
