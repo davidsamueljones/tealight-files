@@ -7,8 +7,7 @@ WLimit = 10
 StartingX = 50
 StartingY = 50
 SquareSize = 50
-OffsetX = 0
-OffsetY = 0
+
 
 
 BombArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
@@ -24,6 +23,8 @@ def PlaceBombs(NumberOfBombs):
       BombsPlaced += 1
   
 def DrawGrid():
+  OffsetX = 0
+  OffsetY = 0
   for x in range(0,10):
     for y in range(0,10):
       OffsetY += SquareSize
