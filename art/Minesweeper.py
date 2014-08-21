@@ -103,8 +103,4 @@ def handle_mousemove(Mx, My, button):
       print(i,j)
 
 PlaceBombs(NumberOfBombs)
-for x in range(0,HLimit):
-    for y in range(0,WLimit):
-      if BombArray[x][y] > -1:
-       VisibleArray[x][y] = 1
 DrawGrid()
