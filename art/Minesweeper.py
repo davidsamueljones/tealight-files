@@ -17,4 +17,4 @@ BombsPlaced = 0
       BombsPlaced += 1
   
 def DrawGrid()
-  
+  image
