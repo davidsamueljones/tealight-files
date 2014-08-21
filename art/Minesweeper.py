@@ -98,7 +98,7 @@ def handle_mousedown(Mx,My, button):
           if lost == True:
            for x in range(0,HLimit):
             for y in range(0,WLimit):
-              if BombArray[x][y] == -1 
+              if BombArray[x][y] == -1:
                 VisibleArray[x][y] = 1
           elif HLimit * WLimit - NumberOfBombs == NumberUncovered:
              won = True
