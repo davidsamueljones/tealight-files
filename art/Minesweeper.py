@@ -4,7 +4,7 @@ from tealight.art import (screen_width, screen_height)
 
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
-  while BombsPlaced < NumberOfBombs + 1:
+  while BombsPlaced < NumberOfBombs:
     x = randint(0,9)
     y = randint(0,9)
     if BombArray[x][y] == 0:
@@ -79,7 +79,7 @@ def handle_mousedown(Mx,My, button):
   
   Mx = Mx - StartingX
   My = My - StartingY
-  if lost == False:
+  if lost == False and won == False:
     if button == "left":
     
       if 0 < Mx < SquareSize*WLimit: 
