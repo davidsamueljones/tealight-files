@@ -33,6 +33,8 @@ def DrawGrid():
             DrawMine(x,y, "red")
           else:
             DrawMine(x,y, "black")
+      elif VisibleArray[x][y] == 2:
+        DrawFlag(x,y)
       OffsetY += SquareSize
     OffsetX += SquareSize
     OffsetY = 0
