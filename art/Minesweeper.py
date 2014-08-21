@@ -13,7 +13,7 @@ OffsetY = 0
 
 BombArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
 VisibleArray = [[0 for x in range(HLimit)] for y in range(WLimit)]
-
+VisibleArray[5][5] = 1
 def PlaceBombs(NumberOfBombs):
   BombsPlaced = 0
   while BombsPlaced < NumberOfBombs + 1:
