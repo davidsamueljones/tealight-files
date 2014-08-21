@@ -53,7 +53,7 @@ def DrawMine(x,y, colour):
   color(colour)
   x += 0.5
   y += 0.5
-  spot(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3)
+  spot(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/5)
 
 def DrawNumber(x,y,NumberOfMines):
   color("red")
