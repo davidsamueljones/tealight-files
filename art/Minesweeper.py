@@ -57,7 +57,7 @@ def DrawMine(x,y):
   spot(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5, 10)
 
 def DrawNumber(x,y):
-  color("red"
+  color("red")
   text(StartingX + SquareSize * x + SquareSize * 0.5,StartingY + SquareSize * y + SquareSize * 0.5,"Hello")
   
 PlaceBombs(NumberOfBombs)
