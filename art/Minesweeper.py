@@ -72,7 +72,7 @@ def BombCheck(x,y):
   BombArray[x][y]=BombCount
 
 def handle_mousedown(Mx,My, button):
-  global lastx, lasty, VisibleArray
+  global lastx, lasty, VisibleArray, lost
   
   Mx = Mx - StartingX
   My = My - StartingY
@@ -89,15 +89,16 @@ def handle_mousedown(Mx,My, button):
           VisibleArray[lastx][lasty] = 1
           IsBomb(lastx,lasty)
           DrawGrid()
+          if lost = true
+               for x in range(0,HLimit):
+                  for y in range(0,WLimit):
+                    VisibleArray[x][y] = 1
+                    DrawMine(50,50,"red")
         
 def IsBomb(x,y):
   global lost
   if BombArray[x][y] == -1:
    lost = True
-   for x in range(0,HLimit):
-    for y in range(0,WLimit):
-      VisibleArray[x][y] = 1
-  DrawMine(50,50,"red")
      
   
 NumberOfBombs = 15
