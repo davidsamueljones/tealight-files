@@ -82,6 +82,7 @@ def DrawNumber(x,y,NumberOfMines):
 
   size = SquareSize/10
   fontsize = str(size)+"px sans-serif"
+  font(fontsize)
   print fontsize
   text(StartingX + SquareSize * x +size/3,StartingY + SquareSize * y +size/3, NumberOfMines)
   
