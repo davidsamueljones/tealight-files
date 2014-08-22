@@ -80,8 +80,6 @@ def DrawNumber(x,y,NumberOfMines):
   elif BombArray[x][y] == 8:
     color("#00C19B")
 
-  x += 0.35
-  y += 0.25
   size = SquareSize/2
   fontsize = str(size)+"px"
   print fontsize
