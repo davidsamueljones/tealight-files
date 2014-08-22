@@ -89,9 +89,9 @@ def DrawFlag(x,y):
   global SquareSize
   DrawCoveredSquare()
   BoxSize = SquareSize/3
-  color("blue")
+  color("teal")
   box(StartingX + SquareSize * x + SquareSize/2 - BoxSize/2,StartingY + SquareSize * y + SquareSize/2 - BoxSize/2, SquareSize/3,SquareSize/3)
-  color("red")
+  color("black")
   rectangle(StartingX + SquareSize * x + SquareSize/2 - BoxSize/2,StartingY + SquareSize * y + SquareSize/2 - BoxSize/2, SquareSize/3,SquareSize/3)
   
 def BombCheck(x,y):
