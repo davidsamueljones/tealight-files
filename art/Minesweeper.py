@@ -81,7 +81,7 @@ def DrawNumber(x,y,NumberOfMines):
     color("#00C19B")
 
   size = SquareSize /2
-  fontsize = str(size)+"px sans-serif"
+  fontsize = str(size)+"px courier_new"
   font(fontsize)
   print fontsize
   text(StartingX + SquareSize * x +size/2,StartingY + SquareSize * y +size/2, NumberOfMines)
