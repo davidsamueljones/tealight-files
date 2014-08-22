@@ -84,7 +84,7 @@ def DrawNumber(x,y,NumberOfMines):
   fontsize = str(size)+"px sans-serif"
   font(fontsize)
   print fontsize
-  text(StartingX + SquareSize * x +size/3,StartingY + SquareSize * y +size/3, NumberOfMines)
+  text(StartingX + SquareSize * x +size/2,StartingY + SquareSize * y +size/2, NumberOfMines)
   
 def DrawFlag(x,y):
   global SquareSize
