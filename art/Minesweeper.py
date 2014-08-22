@@ -83,7 +83,7 @@ def DrawNumber(x,y,NumberOfMines):
   x += 0.35
   y += 0.25
   
-  font("5000px")
+  font("10px")
   text(StartingX + SquareSize * x,StartingY + SquareSize * y, NumberOfMines)
   
 def DrawFlag(x,y):
