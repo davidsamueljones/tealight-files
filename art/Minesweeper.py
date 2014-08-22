@@ -69,8 +69,8 @@ def DrawNumber(x,y,NumberOfMines):
 def DrawFlag(x,y):
   DrawCoveredSquare()
   color("blue")
-  x += 0.5
-  y += 0.5
+  x += 0.5 - SquareSize/10
+  y += 0.5 - SquareSize/10
   box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/5,SquareSize/5)
 
 def BombCheck(x,y):
