@@ -71,7 +71,7 @@ def DrawFlag(x,y):
   color("red")
   x += 0.25
   y += 0.25
-  box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3,SquareSize/2.5)
+  box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/2.5,SquareSize/3)
 
 def BombCheck(x,y):
   global BombArray
