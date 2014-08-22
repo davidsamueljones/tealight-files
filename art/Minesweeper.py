@@ -67,7 +67,7 @@ def DrawNumber(x,y,NumberOfMines):
   text(StartingX + SquareSize * x,StartingY + SquareSize * y, NumberOfMines)
   
 def DrawFlag(x,y):
-  color(blue)
+  color("blue")
   x += 0.5
   y += 0.5
   spot(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/5)
