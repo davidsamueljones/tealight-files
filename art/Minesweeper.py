@@ -89,7 +89,7 @@ def DrawFlag(x,y):
   global SquareSize
   DrawCoveredSquare()
   BoxSize = SquareSize/3
-  color("teal")
+  color("gold")
   box(StartingX + SquareSize * x + SquareSize/2 - BoxSize/2,StartingY + SquareSize * y + SquareSize/2 - BoxSize/2, SquareSize/3,SquareSize/3)
   color("black")
   rectangle(StartingX + SquareSize * x + SquareSize/2 - BoxSize/2,StartingY + SquareSize * y + SquareSize/2 - BoxSize/2, SquareSize/3,SquareSize/3)
