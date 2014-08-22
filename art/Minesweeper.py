@@ -160,7 +160,7 @@ def IsBomb(x,y):
 def FloodBoard(x,y):
   global BombArray, VisibleArray, NumberUncovered
 
-  for (i,j) in [(x-1,y-1),(x-1, y+1), (x+1,y-1), (x+1, y+1)]:
+  for (i,j) in [(x-1,y-1),(x-1,y), (x-1, y+1), (x,y-1), (x, y+1), (x+1,y-1),(x+1,y), (x+1, y+1)]:
     if (i >= 0 and i < WLimit and j >= 0 and j < HLimit):
       if VisibleArray[i][j] == 0 and BombArray[i][j] >= 0:
         NumberUncovered += 1
@@ -168,7 +168,7 @@ def FloodBoard(x,y):
         if BombArray[i][j] == 0:
           FloodBoard(i,j)
       
-NumberOfBombs = 25
+NumberOfBombs = 15
 HLimit = 20
 WLimit = HLimit
 SquareSize = 500/HLimit
