@@ -70,10 +70,9 @@ def DrawFlag(x,y):
   global SquareSize
   print SquareSize
   DrawCoveredSquare()
-  x += 5
-  y += 0
+
   color("blue")
-  box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3,SquareSize/3)
+  box(StartingX + SquareSize * x + SquareSize/2,StartingY + SquareSize * y, SquareSize/3,SquareSize/3)
   color("red")
   rectangle(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3,SquareSize/3)
   
