@@ -68,8 +68,8 @@ def DrawNumber(x,y,NumberOfMines):
   
 def DrawFlag(x,y):
   DrawCoveredSquare()
-  x += SquareSize/40
-  y += SquareSize/40
+  x += SquareSize
+  y += SquareSize
   color("blue")
   box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3,SquareSize/3)
   color("red")
