@@ -184,7 +184,7 @@ lost = False
 won = False
 
 image(StartingX,0,"http://www.ezimba.com/work/140822C/ezimba16125765636900.png")
-image(StartingX - 200,150+ SquareSize * HLimit,"http://www.ezimba.com/work/140822C/ezimba16125769303800.png")
+image(StartingX - 200,140+ SquareSize * HLimit,"http://www.ezimba.com/work/140822C/ezimba16125769303800.png")
 BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 PlaceBombs(NumberOfBombs)
