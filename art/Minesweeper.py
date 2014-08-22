@@ -170,7 +170,7 @@ def FloodBoard(x,y):
           FloodBoard(i,j)
       
 NumberOfBombs = 50
-HLimit = 25
+HLimit = 15
 WLimit = HLimit
 SquareSize = 500/HLimit
 StartingX = screen_width /2 - SquareSize * WLimit/2
