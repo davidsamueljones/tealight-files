@@ -183,7 +183,7 @@ lasty = 0
 lost = False
 won = False
 
-image(StartingX,10,"http://www.ezimba.com/work/140822C/ezimba16125765636900.png")
+image(StartingX,5,"http://www.ezimba.com/work/140822C/ezimba16125765636900.png")
 BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 PlaceBombs(NumberOfBombs)
