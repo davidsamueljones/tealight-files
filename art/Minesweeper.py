@@ -126,7 +126,6 @@ def handle_mousedown(Mx,My, button):
               FloodBoard(lastx,lasty)
             else:
               IsBomb(lastx,lasty)
-          print NumberUncovered
           if lost == True:
            for x in range(0,HLimit):
             for y in range(0,WLimit):
