@@ -67,6 +67,7 @@ def DrawNumber(x,y,NumberOfMines):
   text(StartingX + SquareSize * x,StartingY + SquareSize * y, NumberOfMines)
   
 def DrawFlag(x,y):
+  global SquareSize()
   DrawCoveredSquare()
   x += SquareSize
   y += 0
