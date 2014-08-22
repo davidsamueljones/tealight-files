@@ -170,18 +170,18 @@ def FloodBoard(x,y):
           FloodBoard(i,j)
       
 NumberOfBombs = 25
-NumberUncovered = 0
 HLimit = 20
 WLimit = HLimit
 SquareSize = 500/HLimit
 StartingX = screen_width /2 - SquareSize * WLimit/2
 StartingY = 280
 OffsetX = 0
-OffsetY = 0
+OffsetY = 20
 lastx = 0
 lasty = 0
 lost = False
 won = False
+NumberUncovered = 0
 
 image(StartingX,50,"http://www.ezimba.com/work/140822C/ezimba16125732408300.png")
 image(screen_width/2 - 1000,screen_height -347,"http://i.imgur.com/ofNb09J.png")
