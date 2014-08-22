@@ -21,7 +21,7 @@ def DrawGrid():
   OffsetX = 0
   OffsetY = 0
   color("#cccccc")
-  box(StartingX - 2,StartingY - 2,SquareSize * WLimit + 4,SquareSize * HLimit +4)
+  box(StartingX - 2,StartingY - 2,SquareSize * WLimit + 8,SquareSize * HLimit +8)
   for x in range(0,HLimit):
     for y in range(0,WLimit):
       if VisibleArray[x][y]==0:
@@ -170,7 +170,7 @@ def FloodBoard(x,y):
           FloodBoard(i,j)
       
 NumberOfBombs = 1
-HLimit = 2
+HLimit = 100
 WLimit = HLimit
 SquareSize = 500/HLimit
 StartingX = screen_width /2 - SquareSize * WLimit/2
