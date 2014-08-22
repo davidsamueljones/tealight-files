@@ -1,3 +1,8 @@
+#Emre - emrecan-k
+#David - davidsamueljones
+#Chris - V3520
+#Lizz - LizzTebbutt
+
 from random import random, randint
 from tealight.art import (color, line, spot, circle, box, rectangle, font, image, text, background)
 from tealight.art import (screen_width, screen_height)
