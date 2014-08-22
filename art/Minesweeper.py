@@ -175,7 +175,7 @@ HLimit = 20
 WLimit = HLimit
 SquareSize = 500/HLimit
 StartingX = screen_width /2 - SquareSize * WLimit/2
-StartingY = 330
+StartingY = 280
 OffsetX = 0
 OffsetY = 0
 lastx = 0
@@ -183,7 +183,7 @@ lasty = 0
 lost = False
 won = False
 
-image(StartingX,100,"http://www.ezimba.com/work/140822C/ezimba16125732408300.png")
+image(StartingX,50,"http://www.ezimba.com/work/140822C/ezimba16125732408300.png")
 image(StartingX - 200,140+ SquareSize * HLimit,"http://www.ezimba.com/work/140822C/ezimba16125769303800.png")
 BombArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
 VisibleArray = [[0 for x in range(0,HLimit)] for y in range(0,WLimit)]
