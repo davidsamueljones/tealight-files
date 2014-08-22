@@ -70,6 +70,7 @@ def DrawFlag(x,y):
   color("blue")
   x += 0.5
   y += 0.5
+  DrawCoveredSquare()
   box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/5,SquareSize/5)
 
 def BombCheck(x,y):
