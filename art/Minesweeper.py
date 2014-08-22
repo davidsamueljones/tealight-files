@@ -83,6 +83,8 @@ def DrawNumber(x,y,NumberOfMines):
   size = SquareSize /2
   fontsize = str(size)+"px Courier New Bold"
   font(fontsize)
+  x += 0.125
+  y += 0.125
   text(StartingX + SquareSize * x +size/2,StartingY + SquareSize * y +size/2, NumberOfMines)
   
 def DrawFlag(x,y):
