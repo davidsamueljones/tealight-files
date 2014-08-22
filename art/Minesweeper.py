@@ -68,11 +68,13 @@ def DrawNumber(x,y,NumberOfMines):
   
 def DrawFlag(x,y):
   DrawCoveredSquare()
-  color("red")
   x += 0.25
   y += 0.25
+  color("blue")
+  box(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3,SquareSize/3)
+  color("red")
   rectangle(StartingX + SquareSize * x,StartingY + SquareSize * y, SquareSize/3,SquareSize/3)
-
+  
 def BombCheck(x,y):
   global BombArray
   BombCount = 0
